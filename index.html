@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio pribadi Imron Rosadi">
+    <title>Portofolio Imron Rosadi</title>
+
+    <!-- CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="#home" class="logo">Imron<span>.</span></a>
+
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#biodata">Biodata</a>
+        <a href="#sertifikat">Sertifikat</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+</header>
+
+<main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="small-title">PORTOFOLIO PRIBADI</p>
+            <h1>Halo, saya <span>Imron Rosadi</span> 👋</h1>
+            <p class="hero-text">
+                Siswa Teknik Komputer dan Jaringan yang tertarik
+                dengan jaringan komputer, troubleshooting, dan teknologi.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#biodata" class="btn primary">Lihat Profil</a>
+                <a href="#kontak" class="btn secondary">Hubungi Saya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BIODATA -->
+    <section id="biodata" class="section">
+        <h2 class="section-title">Biodata Diri</h2>
+
+        <div class="profile-card">
+            <div class="photo-box">
+                <img src="foto.jpg" alt="Foto Imron Rosadi">
+            </div>
+
+            <div class="biodata">
+                <div class="data-row">
+                    <strong>Nama Lengkap</strong>
+                    <span>Imron Rosadi</span>
+                </div>
+                <div class="data-row">
+                    <strong>Nama Panggilan</strong>
+                    <span>Imron</span>
+                </div>
+                <div class="data-row">
+                    <strong>Tempat, Tgl Lahir</strong>
+                    <span>Ciamis, 8 Mei 2008</span>
+                </div>
+                <div class="data-row">
+                    <strong>Pendidikan</strong>
+                    <span>SMKN 2 Banjar - Teknik Komputer dan Jaringan</span>
+                </div>
+                <div class="data-row">
+                    <strong>Keahlian</strong>
+                    <span>Troubleshooting, teknisi jaringan, dan komputer</span>
+                </div>
+                <div class="data-row">
+                    <strong>Hobi</strong>
+                    <span>Membaca dan bermain game</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERTIFIKAT -->
+    <section id="sertifikat" class="section certificates">
+        <h2 class="section-title">Sertifikat & Penghargaan</h2>
+
+        <div class="certificate-grid">
+            <article class="certificate-card">
+                <img src="Sertifikat 1.jpg"
+                     alt="Sertifikat OLIMNUS"
+                     class="certificate-image"
+                     data-title="Sertifikat OLIMNUS">
+
+                <div class="certificate-info">
+                    <h3>Sertifikat OLIMNUS</h3>
+                    <p>Klik gambar untuk melihat lebih besar.</p>
+                </div>
+            </article>
+
+            <article class="certificate-card">
+                <img src="sertifikat 2.jpg"
+                     alt="Sertifikat UI/UX Design"
+                     class="certificate-image"
+                     data-title="Sertifikat UI/UX Design">
+
+                <div class="certificate-info">
+                    <h3>Sertifikat UI/UX Design</h3>
+                    <p>Klik gambar untuk melihat lebih besar.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="section contact-section">
+        <h2 class="section-title">Hubungi Saya</h2>
+
+        <p class="contact-description">
+            Silakan hubungi saya melalui WhatsApp atau email.
+        </p>
+
+        <div class="contact-buttons">
+            <!-- Ganti nomor jika diperlukan. Format WhatsApp: 62 + nomor tanpa 0 -->
+            <a class="contact-button whatsapp"
+               href="https://wa.me/6281567990169"
+               target="_blank"
+               rel="noopener">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+
+            <!-- Ganti email jika diperlukan -->
+            <a class="contact-button email"
+               href="mailto:imong1045@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Imron Rosadi. All Rights Reserved.</p>
+</footer>
+
+<!-- MODAL SERTIFIKAT -->
+<div id="certificateModal" class="modal" aria-hidden="true">
+    <button class="modal-close" type="button" aria-label="Tutup">&times;</button>
+    <div class="modal-content">
+        <p id="modalTitle"></p>
+        <img id="modalImage" src="" alt="Sertifikat diperbesar">
+    </div>
+</div>
+
+<!-- JavaScript eksternal -->
+<script src="script.js"></script>
+</body>
+</html>
